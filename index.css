@@ -1,0 +1,134 @@
+.game {
+    position: relative;
+    margin: auto;            
+    width: 1150px; 
+}
+
+h1 {
+    color: darkblue;
+    text-shadow: 0 0 2px rgb(119, 119, 119);
+    font-family: 'Yeseva One', cursive;
+
+}
+
+.main {
+    width: 650px;
+    height: 700px;
+    float: left;
+}
+
+.cell {
+    border: 2px solid darkblue;
+    text-align: center;
+    font-size: 1050%;
+    float: left;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    margin: 1px;
+    text-shadow: 2px 2px 3px rgb(119, 119, 119);
+}
+
+.h:hover {
+    transition: .8s;
+    transform: rotate3d(1, 0, 4, 360deg);
+    /* transform: rotate3d(1, 0, 3, 6.1rad); */
+}
+
+.cross {
+    color: red;
+}
+
+.zero {
+    color: darkblue;
+}
+
+.winBG {
+    background: red;
+}
+
+.info {            
+    position: relative;
+    height: 650px;
+    width: 450px;
+    float: left;
+    margin-left: 30px;
+    top: 50px;            
+    font-family: 'Yeseva One', cursive;
+    font-weight: 600;
+    font-size: 180%;
+    color: darkblue;
+    text-shadow: 0 0 2px rgb(119, 119, 119);
+}
+
+.red {
+    color: rgb(228, 28, 28);
+    text-shadow: 0 0 2px rgb(184, 44, 44);
+}
+
+button {            
+    height: 70px;
+    width: 250px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    border: 2px solid darkblue;
+    background: none;
+    font-family: 'Yeseva One', cursive;
+    font-size: 80%;
+    color: rgb(10, 10, 105);
+    text-shadow: 0 0 2px rgb(119, 119, 119);
+    transition: .5s;            
+}
+
+button:hover {
+    text-shadow: 0 0 8px rgb(25, 25, 221);            
+}
+
+.popup {
+    transition: .5s;
+    position: absolute;
+    z-index: 4;
+    display: none;            
+    text-align: center;            
+    -webkit-transform: translateX(-5%);
+        -ms-transform: translateX(-5%);
+            transform: translateX(-5%);
+    background-color: rgba(0, 0, 139, 0.363);
+    padding: 350px 450px 350px 450px;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 600;
+    font-size: 300%;
+    color: rgb(228, 28, 28);
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+     
+}
+.display {
+    display: block;
+}
+.copyright {
+    line-height: 1.5rem;
+    position: relative;            
+    top: 2rem;
+}
+
+/*CSS Mobile */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    .info {
+        font-size: 150%;
+    }
+    button {
+        width: 130px;
+        margin-left: 10px;
+    }
+    .game {
+    /* transform: scale(0.5); */
+    margin: 0px;
+    width: 200px;
+    }
+    .popup {
+    -webkit-transform: translateX(-1px);
+        -ms-transform: translateX(-1px);
+            transform: translateX(-1px);
+    padding: 450px 210px 500px 210px;
+    }
+}

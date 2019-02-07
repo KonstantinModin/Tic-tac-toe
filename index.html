@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet">
+    <title>Tic-tac-toe</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+
+<body>
+    <div class="game">
+        <div class="main">
+            <h1>Tic-tac-toe</h1>
+
+            <div class="cell h available" id="a1"></div>
+            <div class="cell h available" id="a2"></div>
+            <div class="cell h available" id="a3"></div>
+
+            <div class="cell h available" id="b1"></div>
+            <div class="cell h available" id="b2"></div>
+            <div class="cell h available" id="b3"></div>
+
+            <div class="cell h available" id="c1"></div>
+            <div class="cell h available" id="c2"></div>
+            <div class="cell h available" id="c3"></div>
+            <div class="copyright">Copyright © 2010 Konstantin Modin 
+                All Rights Reserved. Native JS
+            <span><a href="https://github.com/KonstantinModin/Tic-tac-toe">
+                https://github.com/KonstantinModin/Tic-tac-toe</a></span>
+            </div>
+        </div>
+
+        <div class="info">
+            <p>Win: <span class="red" id="win">0</span></p>
+            <p>Lose: <span class="red" id="lose">0</span></p>
+            <p>Draw: <span class="red" id="draw">0</span></p>
+            <br>
+
+            <button id="newGame">New Game</button>
+            <button id="refresh">Reset</button>
+            <button id="about">About</button>
+        </div>
+
+        <div class="popup">You win!</div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
