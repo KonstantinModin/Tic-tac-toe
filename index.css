@@ -106,9 +106,7 @@ button:hover {
     display: block;
 }
 .copyright {
-    line-height: 1.5rem;
-    position: relative;            
-    top: 2rem;
+    line-height: 1.5rem;    
 }
 
 /*CSS Mobile */
